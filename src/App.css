@@ -1,0 +1,202 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+@font-face {
+	font-family: "StinkySlime";
+	src:
+  /* url('./Stinky/Web-TT/Stinky Slime.woff') format('woff'), Modern Browsers */ url("./Stinky/Web-TT/Stinky Slime.woff2")
+		format("woff2");
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.body-background {
+	background: linear-gradient(180deg, #0f110f 50%, #060805 100%);
+}
+
+/* Presale progress bar */
+
+.presale-status {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: white;
+	border-radius: 50px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+	width: 100%;
+	height: 36px;
+	/* background: linear-gradient(360deg, #868886 -1.25%, #5B615B 82.85%, #6E6E6E 100%); */
+	border-radius: 50px;
+	/* border-image-source: linear-gradient(360deg, #9C9C9C 15.79%, #BBBBBB 100%); */
+	box-shadow: 0px 5px 5.9px 0px #eeeeee inset;
+
+	background-image: repeating-linear-gradient(
+		45deg,
+		#93a19f 0px,
+		#93a19f 10px,
+		#a7b0ae 10px,
+		#a7b0ae 20px
+	);
+}
+
+.progress-fill {
+	height: 100%;
+	background-color: #00ff00;
+	border-radius: 50px;
+	box-shadow: 0px 5px 5.9px 0px #eeeeee inset;
+
+	background: linear-gradient(
+		360deg,
+		#0edb0e -1.25%,
+		#008f00 82.85%,
+		#00ae00 100%
+	);
+	opacity: 0.6;
+}
+
+/* Contact Form */
+
+.contact-form {
+	background: linear-gradient(180deg, #00440b 0%, #000a02 100%);
+}
+
+/* contact font */
+.inter-uniquifier {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+}
+
+.backdrop-filters {
+	backdrop-filter: blur(50px);
+}
+
+.logofont {
+	font-family: "StinkySlime";
+}
+
+.titlegreen {
+	font-family: "StinkySlime";
+	background: linear-gradient(360deg, #144c14 15.79%, #29ac29 100%);
+	background-clip: text;
+	color: transparent;
+	border-image-source: linear-gradient(360deg, #6c9f7d 15.79%, #8eff7b 100%);
+}
+
+.titlered {
+	font-family: "StinkySlime";
+	background: linear-gradient(360deg, #4c1414 15.79%, #ac2929 100%);
+	background-clip: text;
+	color: transparent;
+	border-image-source: linear-gradient(360deg, #9f6c6c 15.79%, #ff7b7b 100%);
+}
+
+.timerback {
+	background: #191919;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 0px 0px #254b2533 inset;
+	border-radius: 5px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 160px;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.timerback-1 {
+	background: #191919;
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 0px 0px #254b2533 inset;
+	border-radius: 10px;
+	padding-top: 22px;
+	padding-bottom: 14px;
+	padding-left: 18px;
+	padding-right: 18px;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-background {
+	background: linear-gradient(
+		360deg,
+		#0edb0e -1.25%,
+		#008f00 82.85%,
+		#00ae00 100%
+	);
+	border-image-source: linear-gradient(360deg, #129f11 15.79%, #28b927 100%);
+	box-shadow: 0px 10px 5.9px 0px #90fa8b inset;
+	border-radius: 10px;
+}
+
+.red-button-background {
+	background: linear-gradient(
+		360deg,
+		#db0e0e -1.25%,
+		#8f0000 82.85%,
+		#ae0000 100%
+	);
+	border-image-source: linear-gradient(360deg, #9f1111 15.79%, #b92727 100%);
+	box-shadow: 0px 10px 5.9px 0px #fa8b8b inset;
+	border-radius: 10px;
+}
+
+.yellow-button-background {
+	background: linear-gradient(
+		360deg,
+		#dba10e -1.25%,
+		#b9b100 82.85%,
+		#ae9c00 100%
+	);
+	border-image-source: linear-gradient(360deg, #9f9a11 15.79%, #b6b927 100%);
+	box-shadow: 0px 10px 5.9px 0px #fae28b inset;
+	border-radius: 10px;
+}
+
+.footerbackground {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #070906 100%);
+}
